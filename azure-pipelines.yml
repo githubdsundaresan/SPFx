@@ -25,14 +25,14 @@ steps:
     gulp package-solution --ship
   displayName: 'Build and package the solution'
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(Build.SourcesDirectory)/sharepoint/solution/quicklinks.sppkg'
-    artifactName: 'SPFx sppkg'
-  displayName: 'Publish build SPFx artifacts'
+#- task: PublishBuildArtifacts@1
+#  inputs:
+#    PathtoPublish: '$(Build.SourcesDirectory)/sharepoint/solution/quicklinks.sppkg'
+#    artifactName: 'SPFx sppkg'
+#  displayName: 'Publish build SPFx artifacts'
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(Build.SourcesDirectory)/devops/release/'
-    artifactName: 'Office 365 CLI scripts'
-  displayName: 'Publish build office 365 artifacts'
+#- task: PublishBuildArtifacts@1
+#  inputs:
+#    PathtoPublish: '$(Build.SourcesDirectory)/devops/release/'
+#    artifactName: 'Office 365 CLI scripts'
+#  displayName: 'Publish build office 365 artifacts'
